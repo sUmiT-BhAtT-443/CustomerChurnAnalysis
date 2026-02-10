@@ -130,7 +130,7 @@ Contract & payment method impact
 Customers-at-risk table
 
 🌐 Live Power BI Dashboard
-🔗 View Live Dashboard:[DashboardLink](https://app.powerbi.com/view?r=eyJrIjoiZTc5YTNjYTItYmJiMi00NzE2LThjZGUtOTNkMGJkNzIxMDUzIiwidCI6IjE5MjA4NDBiLTA0YjctNDRhZi05YTRkLTk4YmFkZjRlY2M0YSJ9)
+🔗 View Live Dashboard: https://app.powerbi.com/view?r=eyJrIjoiZTc5YTNjYTItYmJiMi00NzE2LThjZGUtOTNkMGJkNzIxMDUzIiwidCI6IjE5MjA4NDBiLTA0YjctNDRhZi05YTRkLTk4YmFkZjRlY2M0YSJ9
 
 💡 Business Impact
 This project helps organizations:
