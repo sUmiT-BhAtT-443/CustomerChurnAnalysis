@@ -48,8 +48,9 @@ The project follows a **complete analytics lifecycle** from raw data to business
 - Created production-ready tables
 - Built views for analytics and ML pipelines
 
-# 🌐 Live Power BI Dashboard
+## 🌐 Live Power BI Dashboard
 🔗 View Live Dashboard: https://app.powerbi.com/view?r=eyJrIjoiZTc5YTNjYTItYmJiMi00NzE2LThjZGUtOTNkMGJkNzIxMDUzIiwidCI6IjE5MjA4NDBiLTA0YjctNDRhZi05YTRkLTk4YmFkZjRlY2M0YSJ9
+---
 
 Example:
 ```sql
