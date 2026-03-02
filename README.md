@@ -1,6 +1,6 @@
 # 📊 Customer Churn Analysis & Prediction
 
-An end-to-end **Customer Churn Analytics and Prediction project** built using  
+An end-to-end **Customer Churn Analytics and Prediction** project built using  
 **SQL Server, Python (Machine Learning), and Power BI** to identify churn drivers, predict high-risk customers, and support data-driven retention strategies.
 
 ---
@@ -10,160 +10,155 @@ An end-to-end **Customer Churn Analytics and Prediction project** built using
 Customer churn is one of the biggest challenges for subscription-based businesses.  
 This project focuses on:
 
-- Understanding customer churn behavior
-- Identifying key factors driving churn
-- Predicting customers likely to churn
-- Visualizing insights using interactive dashboards
+- Understanding customer churn behavior  
+- Identifying key factors driving churn  
+- Predicting customers likely to churn  
+- Visualizing insights using interactive dashboards  
 
-The project follows a **complete analytics lifecycle** from raw data to business-ready insights.
+The project follows a **complete analytics lifecycle**, from raw data processing to business-ready insights.
 
 ---
 
 ## 🧱 Tech Stack
 
-- **SQL Server** – Data cleaning, transformation, views
-- **Python** – Data preprocessing, ML model training
-- **Machine Learning** – Random Forest Classifier
-- **Power BI** – Interactive dashboards & reporting
-- **Jupyter Notebook** – Model development & evaluation
+- **SQL Server** – Data cleaning, transformation, views  
+- **Python** – Data preprocessing & ML model training  
+- **Machine Learning** – Random Forest Classifier  
+- **Power BI** – Interactive dashboards & reporting  
+- **Jupyter Notebook** – Model development & evaluation  
 
 ---
 
 ## 🗂️ Data Architecture
 
-### Tables
-- **stg_Churn** → Raw staging data
-- **prod_Churn** → Cleaned production data
+### 🔹 Tables
+- `stg_Churn` → Raw staging data  
+- `prod_Churn` → Cleaned production data  
 
-### Views
-- **vw_ChurnData** → Customers who *Stayed* or *Churned*
-- **vw_JoinData** → Newly *Joined* customers (used for prediction)
+### 🔹 Views
+- `vw_ChurnData` → Customers who *Stayed* or *Churned*  
+- `vw_JoinData` → Newly *Joined* customers (used for prediction)  
 
 ---
 
 ## 🧹 Data Cleaning & Transformation (SQL)
 
-- Replaced NULL values with business-friendly defaults
-- Standardized categorical columns
-- Created production-ready tables
-- Built views for analytics and ML pipelines
+- Replaced NULL values with business-friendly defaults  
+- Standardized categorical columns  
+- Created production-ready tables  
+- Built views for analytics and ML pipelines  
 
-## 🌐 Live Power BI Dashboard
-🔗 View Live Dashboard: https://app.powerbi.com/view?r=eyJrIjoiZTc5YTNjYTItYmJiMi00NzE2LThjZGUtOTNkMGJkNzIxMDUzIiwidCI6IjE5MjA4NDBiLTA0YjctNDRhZi05YTRkLTk4YmFkZjRlY2M0YSJ9
----
+### Example:
 
-Example:
 ```sql
 ISNULL(Internet_Type, 'None') AS Internet_Type,
 ISNULL(Churn_Reason, 'Others') AS Churn_Reason
-📈 Exploratory Data Analysis (EDA)
+```
+
+---
+
+## 🌐 Live Power BI Dashboard
+
+🔗 **View Live Dashboard:**  
+https://app.powerbi.com/view?r=eyJrIjoiZTc5YTNjYTItYmJiMi00NzE2LThjZGUtOTNkMGJkNzIxMDUzIiwidCI6IjE5MjA4NDBiLTA0YjctNDRhZi05YTRkLTk4YmFkZjRlY2M0YSJ9
+
+---
+
+## 📈 Exploratory Data Analysis (EDA)
+
 Performed analysis to understand:
 
-Gender-wise churn
+- Gender-wise churn  
+- Age group vs churn rate  
+- State-wise churn (Top 5)  
+- Contract & payment method impact  
+- Revenue contribution by churn status  
 
-Age group vs churn rate
+---
 
-State-wise churn (Top 5)
+## 🤖 Machine Learning Model
 
-Contract & payment method impact
+- **Algorithm:** Random Forest Classifier  
+- **Target Variable:** `Customer_Status`  
+  - Stayed → 0  
+  - Churned → 1  
+- **Train-Test Split:** 80% / 20%  
+- **Model Accuracy:** ~84%  
 
-Revenue contribution by churn status
+### 🔍 Feature Importance (Top Drivers)
 
-🤖 Machine Learning Model
-Algorithm: Random Forest Classifier
+- Contract Type  
+- Total Revenue  
+- Monthly Charges  
+- Tenure in Months  
+- Internet Type  
 
-Target Variable: Customer_Status
+---
 
-Stayed → 0
+## 🔮 Churn Prediction on New Customers
 
-Churned → 1
+- Applied trained model on newly joined customers  
+- Identified customers at high risk of churn  
+- Exported predicted churn data for Power BI reporting  
 
-Train-Test Split: 80% / 20%
+---
 
-Accuracy: ~84%
+## 📊 Power BI Dashboards
 
-Feature Importance (Top Drivers)
-Contract Type
-
-Total Revenue
-
-Monthly Charges
-
-Tenure in Months
-
-Internet Type
-
-🔮 Churn Prediction on New Customers
-Applied trained model on newly joined customers
-
-Identified customers at high risk of churn
-
-Exported predicted churn data for Power BI reporting
-
-📊 Power BI Dashboards
-🔹 Churn Summary Dashboard
+### 🔹 Churn Summary Dashboard
 
 Includes:
+- Total Customers  
+- New Joiners  
+- Churn Rate  
+- Total Churn  
+- Churn by Gender, Age, and State  
+- Churn by Contract & Payment Method  
+- Services vs Churn  
 
-Total Customers
+---
 
-New Joiners
-
-Churn Rate
-
-Total Churn
-
-Churn by Gender, Age, State
-
-Churn by Contract & Payment Method
-
-Services vs Churn
-
-🔹 Churn Prediction Dashboard
+### 🔹 Churn Prediction Dashboard
 
 Includes:
+- Predicted churners count  
+- High-risk customer profiles  
+- State-wise churn risk  
+- Contract & payment method impact  
+- Customers-at-risk table  
 
-Predicted churners count
+---
 
-High-risk customer profiles
+## 💡 Business Impact
 
-State-wise churn risk
+This project enables organizations to:
 
-Contract & payment method impact
+- Identify churn-prone customers early  
+- Reduce potential revenue loss  
+- Design targeted retention strategies  
+- Improve customer lifetime value (CLV)  
 
-Customers-at-risk table
+---
 
+## ✅ Key Learnings
 
-💡 Business Impact
-This project helps organizations:
+- End-to-end data analytics workflow  
+- SQL-based data engineering  
+- Machine learning model development  
+- Business-focused dashboard design  
+- Translating data into actionable insights  
 
-Identify churn-prone customers early
+---
 
-Reduce revenue loss
+## 📌 Future Improvements
 
-Design targeted retention strategies
+- Hyperparameter tuning  
+- SHAP-based model explainability  
+- Real-time churn prediction  
+- Automated data pipelines  
 
-Improve customer lifetime value
+---
 
-✅ Key Learnings
-End-to-end data analytics workflow
+## 👤 Author
 
-SQL-based data engineering
-
-Machine learning model building
-
-Business-focused dashboard design
-
-Translating data into actionable insights
-
-📌 Future Improvements
-Hyperparameter tuning
-
-SHAP-based model explainability
-
-Real-time churn prediction
-
-Automated data pipelines
-
-👤 Author
-Sumit Bhatt
+**Sumit Bhatt**  
